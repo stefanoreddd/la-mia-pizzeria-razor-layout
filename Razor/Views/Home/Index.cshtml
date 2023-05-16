@@ -84,8 +84,7 @@
         }
     }
 
-        <ul>
-        @{ 
+        <ul>@{
             foreach (int n in numbers)
             {
                 if (n >= 20 && n <= 70)
@@ -93,7 +92,17 @@
                     <li>@n</li>
                 }
             }
-        }
+          }
         </ul>
 
+
+
+    5. <p>@DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")</p>
+
+
+
+    6. 
+        a. <p>@DateTime.Now.AddDays(-7)</p>
+        b. <p>@DateTime.Now.DayOfWeek</p>
+        c. <p>@DateTime.Now.AddYears(1).DayOfWeek</p>
 </div>
